@@ -1,0 +1,191 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Chic Style – Curated Designer Fashion</title>
+  <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@600&family=Lato&display=swap" rel="stylesheet">
+  <style>
+    body {
+      margin: 0;
+      font-family: 'Lato', sans-serif;
+      background-color: #ffffff;
+      color: #333;
+    }
+    header {
+      background: #000;
+      color: white;
+      padding: 20px;
+      text-align: center;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      gap: 15px;
+    }
+    header img {
+      height: 50px;
+    }
+    header h1 {
+      font-family: 'Playfair Display', serif;
+      font-size: 2.5rem;
+      margin: 0;
+    }
+    nav {
+      background: #f4f4f4;
+      padding: 10px;
+      text-align: center;
+    }
+    nav a {
+      margin: 0 15px;
+      text-decoration: none;
+      color: #333;
+      font-weight: bold;
+    }
+    .hero {
+      background: linear-gradient(rgba(0,0,0,0.4), rgba(0,0,0,0.4)), url('https://images.unsplash.com/photo-1618453292459-0b8f1cd3d7b4?auto=format&fit=crop&w=1600&q=80') center/cover no-repeat;
+      height: 100vh;
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
+      color: white;
+      text-shadow: 1px 1px 4px #000;
+    }
+    .hero h2 {
+      font-size: 3rem;
+      margin: 0.5em 0;
+    }
+    .hero p {
+      font-size: 1.2rem;
+      max-width: 600px;
+      text-align: center;
+      margin-bottom: 2em;
+    }
+    .cta {
+      background: #fff;
+      color: #000;
+      padding: 12px 25px;
+      border: 2px solid #000;
+      font-size: 1rem;
+      text-decoration: none;
+      transition: all 0.3s ease;
+    }
+    .cta:hover {
+      background: #000;
+      color: #fff;
+    }
+    .section {
+      padding: 60px 20px;
+      text-align: center;
+    }
+    .section h3 {
+      font-family: 'Playfair Display', serif;
+      font-size: 2rem;
+      margin-bottom: 20px;
+    }
+    .categories, .blog-posts {
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: center;
+      gap: 20px;
+    }
+    .card {
+      width: 250px;
+      padding: 20px;
+      border: 1px solid #eee;
+      border-radius: 10px;
+      box-shadow: 0 2px 5px rgba(0,0,0,0.05);
+      text-align: left;
+    }
+    .card h4 {
+      font-size: 1.2rem;
+      margin-bottom: 10px;
+    }
+    .card p {
+      font-size: 0.9rem;
+    }
+    .card a {
+      display: inline-block;
+      margin-top: 10px;
+      color: #000;
+      font-weight: bold;
+      text-decoration: underline;
+    }
+    footer {
+      background: #f8f8f8;
+      text-align: center;
+      padding: 20px;
+      font-size: 0.9rem;
+    }
+  </style>
+</head>
+<body>
+  <header>
+    <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/a/a3/Black_square.svg/1024px-Black_square.svg.png" alt="Chic Style Logo">
+    <h1>Chic Style</h1>
+  </header>
+  <nav>
+    <a href="#">Home</a>
+    <a href="#categories">Categories</a>
+    <a href="#blog">Style Guide</a>
+    <a href="#about">About</a>
+    <a href="#contact">Contact</a>
+  </nav>
+  <section class="hero">
+    <h2>Discover Curated Designer Fashion</h2>
+    <p>Hand-picked pieces from Farfetch — elevate your wardrobe with timeless luxury.</p>
+    <a href="https://www.farfetch.com" target="_blank" class="cta">Shop Now</a>
+  </section>
+
+  <section class="section" id="categories">
+    <h3>Shop by Category</h3>
+    <div class="categories">
+      <div class="card">
+        <h4>Women</h4>
+        <p>Elegant and bold styles for modern women.</p>
+        <a href="https://www.farfetch.com/shopping/women/items.aspx" target="_blank">Shop Women</a>
+      </div>
+      <div class="card">
+        <h4>Men</h4>
+        <p>Refined fashion for the contemporary man.</p>
+        <a href="https://www.farfetch.com/shopping/men/items.aspx" target="_blank">Shop Men</a>
+      </div>
+      <div class="card">
+        <h4>Shoes</h4>
+        <p>Step into luxury with designer shoes.</p>
+        <a href="https://www.farfetch.com/shopping/men/shoes-2/items.aspx" target="_blank">Shop Shoes</a>
+      </div>
+      <div class="card">
+        <h4>Bags</h4>
+        <p>Chic handbags and statement pieces.</p>
+        <a href="https://www.farfetch.com/shopping/women/bags-1/items.aspx" target="_blank">Shop Bags</a>
+      </div>
+    </div>
+  </section>
+
+  <section class="section" id="blog">
+    <h3>From the Style Guide</h3>
+    <div class="blog-posts">
+      <div class="card">
+        <h4>10 Wardrobe Essentials from Farfetch</h4>
+        <p>Discover the must-have items to elevate your fashion game this year.</p>
+        <a href="#">Read More</a>
+      </div>
+      <div class="card">
+        <h4>How to Style a Blazer in 2025</h4>
+        <p>Blazers are back. Learn how to wear them with modern flair.</p>
+        <a href="#">Read More</a>
+      </div>
+      <div class="card">
+        <h4>Seasonal Must-Haves</h4>
+        <p>A quick guide to what’s hot this season in designer fashion.</p>
+        <a href="#">Read More</a>
+      </div>
+    </div>
+  </section>
+
+  <footer>
+    &copy; 2025 Chic Style. Curated with ❤️ | Affiliate Partner: Farfetch
+  </footer>
+</body>
+</html>
